@@ -40,13 +40,13 @@
 		<?php include('navbar.php')?>
 
 		<!-- Main -->
-		<div class="container-fluid mt-5">
-			<div class="row">
+		<div class="container-fluid">
+			<div class="row p-5">
 				<div class="col-lg-6">
 				</div>
 				<div class="col-lg-6">
 				
-					<div data-aos="zoom-in" data-aos-duration="1000" class="row p-5 mydiv " style="height: 300px;">
+					<div data-aos="zoom-in" data-aos-duration="1000" class="row mydiv ">
 					
 						<!-- container -->
 						<div class="h-100 col-lg-5  p-5 border border-warning mx-auto" name="sum" style="margin: 20px;">
@@ -56,7 +56,7 @@
 							</span></a>
 						</div>
 						<!-- container -->
-						<div class="h-100 col-lg-5  p-5 border border-warning mx-auto" name="min" style="margin: 20px">
+						<div class="h-100 col-lg-5  p-5 border border-warning mx-auto" name="min" style="margin: 20px;">
 							<a class="link-tag click" style="display:block;" href="gameGUI.php?mod=min">
 							<span class="container">
 								<a class="centered" href="gameGUI.php?mod=min"><img class="imgg" src="assets\images\-.png"></a>
@@ -64,7 +64,7 @@
 						</div>
 					</div>
 					
-					<div data-aos="zoom-in" data-aos-duration="1000" class="row p-5 mydiv " style="height: 300px;">
+					<div data-aos="zoom-in" data-aos-duration="1000" class="row mydiv ">
 					
 						<!-- container -->
 						<div class="h-100 col-lg-5  p-5 border border-warning mx-auto" name="mul" style="margin: 20px;">
