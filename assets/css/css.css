@@ -17,7 +17,7 @@ html body {
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1920px) {
   .cover1 {
     object-fit: cover;
   }
@@ -35,6 +35,16 @@ html body {
   font-weight: bold;
   color: white;
 }
+
+/*footer styles*/
+.footer {
+  background-color: rgba(5, 5, 5, 0.5);
+  font-weight: bold;
+  color: white;
+  border: #e5e5e5;
+  border-top-style: groove;
+}
+
 
 /* game section styles */
 .section1 {
@@ -147,6 +157,7 @@ html body {
   border-radius: 5px;
   text-align: center;
   background-color: rgba(192, 192, 192, 0.3);
+  padding: 48px;
 }
 
 .mydiv div:hover {

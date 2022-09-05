@@ -80,6 +80,8 @@ if (!isset($_COOKIE['userId'])) {
 			</div>
 		</div>
 	</div>
+	<!-- footer -->
+	<?php include('footer.php') ?>
 	<!-- End Main -->
 
 	<!--import firebasejs inside the body for use of navbar-->

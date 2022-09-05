@@ -84,6 +84,8 @@
 				</div>
 			</div>
 		</div>
+	<!-- footer -->
+	<?php include('footer.php') ?>
 		<!-- End Main -->
 		
 		<!--aos Animate On Scroll Library-->
