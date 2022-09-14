@@ -40,7 +40,7 @@
 		<?php include('navbar.php')?>
 
 		<!-- Main -->
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row p-5">
 				<div class="col-lg-6">
 				</div>

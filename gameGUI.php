@@ -45,7 +45,7 @@ if (!isset($_COOKIE['userId'])) {
 	<?php include('navbar.php') ?>
 
 	<!-- Main -->
-	<div class="container-fluid mt-1">
+	<div class="container mt-1">
 		<div class="container-fluid section1">
 			<div class="row">
 				<div class="col-lg-8 coll">
