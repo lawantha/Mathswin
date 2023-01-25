@@ -44,7 +44,7 @@ function signUp() {
 			if (profilepic != null || profilepic == 'undefined') {
 				uploadimg(userId);
 			}
-			alert("Signed up successfully");
+			// alert("Signed up successfully");
 			// Sleep for the number of seconds until the upload image function compile
 			sleep(4000).then(() => {
 				window.location.href = "login.php";
@@ -72,7 +72,7 @@ function login() {
 			var user = userCredential.user;
 			var userId = firebase.auth().currentUser.uid;
 
-			alert("logged in");
+			// alert("logged in");
 			document.cookie = "userId=" + userId;
 
 			// call get data function to obtain user data
@@ -309,7 +309,7 @@ function logout() {
 			var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
 			document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
 		}
-		alert('logout successfully');
+		// alert('logout successfully');
 	}).catch((error) => {
 		// An error happened.
 		var errorCode = error.code;
@@ -345,3 +345,4 @@ function getCookie(cname) {
 function sleep(time) {
 	return new Promise((resolve) => setTimeout(resolve, time));
 }
+

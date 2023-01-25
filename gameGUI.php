@@ -1,8 +1,11 @@
 <?php
-$mod = $_GET['mod'];
+if (isset($_GET['mod'])) {
+	$mod = $_GET['mod'];
+}
 if (!isset($_COOKIE['userId'])) {
 	header('Location:login.php');
 }
+ob_start(); // Initiate the output buffer
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +45,7 @@ if (!isset($_COOKIE['userId'])) {
 
 <body>
 	<!-- navigation bar -->
-	<?php include('navbar.php') ?>
+	<?php include('navbar.php'); ?>
 
 	<!-- Main -->
 	<div class="container mt-1">
@@ -51,7 +54,8 @@ if (!isset($_COOKIE['userId'])) {
 				<div class="col-lg-8 coll">
 					<div class="grid-container" id="gamediv">
 						<!-- game api-->
-						<?php include('API/newGame.php') ?>
+						<?php
+						include('API/newGame.php') ?>
 					</div>
 
 					<!--submit answer button(event-driven programming)-->
@@ -92,3 +96,7 @@ if (!isset($_COOKIE['userId'])) {
 </body>
 
 </html>
+
+<?php
+ob_end_flush(); // Flush the output from the buffer
+?>
